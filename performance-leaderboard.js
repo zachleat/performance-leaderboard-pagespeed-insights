@@ -37,8 +37,8 @@ async function runLighthouse(urls, options = {}) {
   let promises = [];
 
   for(let url of urls) {
-    try {
-      promises.push(new Promise(async (resolve) => {
+    promises.push(new Promise(async (resolve) => {
+      try {
         console.log( `(Site ${++count} of ${urls.length}): ${url}` );
 
         if(opts.beforeHook && typeof opts.beforeHook === "function") {
@@ -63,13 +63,13 @@ async function runLighthouse(urls, options = {}) {
         }
 
         resultLog.add(url, rawResult);
+      } catch(e) {
+        console.log( `Logged an error with ${url}: `, e );
+        resultLog.addError(url, e);
+      }
 
-        resolve();
-      }));
-    } catch(e) {
-      console.log( `Logged an error with ${url}: `, e );
-      resultLog.addError(url, e);
-    }
+      resolve();
+    }));
   }
 
   await Promise.all(promises);
