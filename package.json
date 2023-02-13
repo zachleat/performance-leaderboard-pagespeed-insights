@@ -1,0 +1,33 @@
+{
+  "name": "performance-leaderboard-pagespeed-insights",
+  "version": "9.6.6",
+  "main": "performance-leaderboard.js",
+  "scripts": {
+    "sample": "node test/sample"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachleat/performance-leaderboard-pagespeed-insights.git"
+  },
+  "keywords": [
+    "performance",
+    "lighthouse"
+  ],
+  "author": {
+    "name": "Zach Leatherman",
+    "email": "zachleatherman@gmail.com",
+    "url": "https://zachleat.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zachleat/performance-leaderboard-pagespeed-insights/issues"
+  },
+  "homepage": "https://github.com/zachleat/performance-leaderboard-pagespeed-insights#readme",
+  "dependencies": {
+    "@11ty/eleventy-fetch": "^3.0.0",
+    "@axe-core/puppeteer": "^4.6.0",
+    "lodash.get": "^4.4.2",
+    "puppeteer": "^18.2.1",
+    "slugify": "^1.6.5"
+  }
+}
