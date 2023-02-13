@@ -1,6 +1,6 @@
 {
   "name": "performance-leaderboard-pagespeed-insights",
-  "version": "9.6.6",
+  "version": "9.6.7",
   "main": "performance-leaderboard.js",
   "scripts": {
     "sample": "node test/sample"
