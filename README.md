@@ -1,6 +1,6 @@
 # performance-leaderboard-pagespeed-insights
 
-A plugin to run Lighthouse (on PageSpeed Insights) against a set of urls to see which site is the fastest.
+A plugin to run Lighthouse (on [PageSpeed Insights](https://pagespeed.web.dev/)) against a set of urls to see which site is the fastest.
 
 * See also: [`performance-leaderboard`](https://github.com/zachleat/performance-leaderboard/) (which runs Lighthouse locally)
 
